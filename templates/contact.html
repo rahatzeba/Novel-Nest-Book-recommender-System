@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Novel Nest</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #689B8A;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+      text-align: center;
+      color: #F2EDD1;
+    }
+
+    /* Custom Navbar */
+    .custom-navbar {
+      background-color: #280A3E;
+    }
+    .custom-navbar .nav-link,
+    .custom-navbar .navbar-brand {
+      color: #F2EDD1 !important;
+    }
+
+    /* Thank You Animation */
+    .thankyou {
+      margin-top: 150px;
+      font-size: 4rem;
+      font-weight: bold;
+      color: #280A3E;
+      animation: fadeZoom 2s infinite alternate;
+    }
+
+    @keyframes fadeZoom {
+      from { opacity: 0.5; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1.1); }
+    }
+
+    /* Contact details */
+    .contact-details {
+      margin-top: 30px;
+      font-size: 1.3rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">NOVEL NEST</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="/">HOME</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/topbooks">TOP BOOKS</a></li>
+          <li class="nav-item"><a class="nav-link" href="/recommend">RECOMMEND</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Thank You Section -->
+  <div class="thankyou">THANK YOU</div>
+
+  <!-- Contact Details -->
+  <div class="contact-details">
+    <p>Email: <a href="mailto:rahatzeba@xyz.com" style="color:#F2EDD1;">rahatzeba@xyz.com</a></p>
+    <p>Phone: <a href="tel:+911010101234" style="color:#F2EDD1;">+91 1010 1012 34</a></p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

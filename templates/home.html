@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NOVEL NEST</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body,html{margin:0;padding:0;font-family:sans-serif;background:#689B8A;color:#F2EDD1;}
+    .custom-navbar{background:#280A3E;}
+    .custom-navbar .nav-link,.custom-navbar .navbar-brand{color:#F2EDD1!important;font-weight:600;}
+    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:60px;}
+    .hero-left{flex:1;z-index:1;}
+
+    /* Typewriter Effect */
+    .hero-title {
+      font-size:4rem;
+      font-weight:900;
+      color:#280A3E;
+      white-space:nowrap;
+      overflow:hidden;
+      border-right:.15em solid #280A3E;
+      animation: typing 3.5s steps(20,end) forwards, blink-caret .75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width:0 }
+      to { width:100% }
+    }
+    @keyframes blink-caret {
+      from,to { border-color:transparent }
+      50% { border-color:#280A3E }
+    }
+
+    .hero-text{margin:20px 0;font-size:1.2rem;color:#F2EDD1;max-width:500px;}
+    .btn-main{background:#280A3E;color:#F2EDD1;font-weight:600;padding:10px 24px;border-radius:8px;text-decoration:none;}
+
+    .hero-right{flex:1;display:flex;justify-content:center;z-index:1;}
+    .hero-right img{
+      max-width:80%;
+      animation: float-img 4s ease-in-out infinite;
+    }
+
+    /* Animate image */
+    @keyframes float-img {
+      0%,100% { transform:translateY(0) scale(1);}
+      50% { transform:translateY(-20px) scale(1.05);}
+    }
+
+    /* Floating book icons */
+    .icon{position:absolute;font-size:40px;color:#280A3E;opacity:.3;animation:float 12s linear infinite;}
+    @keyframes float{0%{transform:translateY(100vh)}100%{transform:translateY(-10vh)}}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">NOVEL NEST</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/topbooks">Top Books</a></li>
+          <li class="nav-item"><a class="nav-link" href="/recommend">Recommend</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero container">
+    <div class="hero-left">
+      <h1 class="hero-title">NOVEL NEST</h1>
+      <p class="hero-text">It is  a small website that recommends similar books based on your choice and also mention Top 50 books from the
+      <a href="https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset" target="_blank">dataset</a>.
+      </p>
+      <br>
+
+      <a href="/topbooks" class="btn-main">Show Top Books</a>
+    </div>
+    <div class="hero-right">
+      <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png" alt="Book graphic">
+    </div>
+
+    <!-- Floating book icons -->
+    <div class="icon" style="left:10%;animation-delay:0s;">📚</div>
+    <div class="icon" style="left:40%;animation-delay:3s;">📖</div>
+    <div class="icon" style="left:70%;animation-delay:6s;">📘</div>
+    <div class="icon" style="left:85%;animation-delay:9s;">📕</div>
+  </section>
+</body>
+</html>
